@@ -1,0 +1,8 @@
+---//Player get the position \\------
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+local part = Instance.new("Part")
+part.Parent = game.Players.LocalPlayer.Character
+part.CFrame = player.Character:GetPrimaryPartCFrame
